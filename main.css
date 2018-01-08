@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.row:before, .row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+[class*="col-"]{
+  float: left;
+  min-height: 50px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+.col-1{width: calc(100% - 20px); background-color: #fb1e8e}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+.col-2{width: calc(100% - 20px); background-color: #fff}
+.imagen{
+  width: 100%;
+  height: 400px;
+}
+.col-3{width: calc(50% - 20px); background-color: #fff}
+.contactos{
+  width: 100%;
+  height: 300px;
+}
+.col-4{width: calc(33.333333% - 20px); background-color: #fff }
+.lineas{
+  width: 100%;
+  height: 200px;
+}
+.noticias{
+  width: 100%;
+  height: 200px;
+}
+.eventos{
+  width: 100%;
+  height: 200px;
+}
+.col-5{width: calc(100% - 20px); background-color: #fb1e8e}
+footer{
+  color: #fff;
+  padding-top: 13px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  [class*="col-"]{
+    width: 50%;
+  }
+}
